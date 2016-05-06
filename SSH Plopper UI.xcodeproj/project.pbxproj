@@ -12,7 +12,6 @@
 		AEF768661CDD0A3E00EF7936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF768651CDD0A3E00EF7936 /* ViewController.swift */; };
 		AEF768681CDD0A3E00EF7936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF768671CDD0A3E00EF7936 /* Assets.xcassets */; };
 		AEF7686B1CDD0A3E00EF7936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF768691CDD0A3E00EF7936 /* Main.storyboard */; };
-		AEF768731CDD0A5E00EF7936 /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF768721CDD0A5E00EF7936 /* Advertiser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		AEF768671CDD0A3E00EF7936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF7686A1CDD0A3E00EF7936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEF7686C1CDD0A3E00EF7936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEF768721CDD0A5E00EF7936 /* Advertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				AEF768671CDD0A3E00EF7936 /* Assets.xcassets */,
 				AEF768691CDD0A3E00EF7936 /* Main.storyboard */,
 				AEF7686C1CDD0A3E00EF7936 /* Info.plist */,
-				AEF768721CDD0A5E00EF7936 /* Advertiser.swift */,
 				AE0FAC531CDD199F0004BAB0 /* CommandRunner.swift */,
 			);
 			path = "SSH Plopper UI";
@@ -139,7 +136,6 @@
 			files = (
 				AEF768661CDD0A3E00EF7936 /* ViewController.swift in Sources */,
 				AEF768641CDD0A3E00EF7936 /* AppDelegate.swift in Sources */,
-				AEF768731CDD0A5E00EF7936 /* Advertiser.swift in Sources */,
 				AE0FAC541CDD199F0004BAB0 /* CommandRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

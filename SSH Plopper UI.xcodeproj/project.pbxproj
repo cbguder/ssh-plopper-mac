@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0FAC541CDD199F0004BAB0 /* CommandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0FAC531CDD199F0004BAB0 /* CommandRunner.swift */; };
 		AEF768641CDD0A3E00EF7936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF768631CDD0A3E00EF7936 /* AppDelegate.swift */; };
 		AEF768661CDD0A3E00EF7936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF768651CDD0A3E00EF7936 /* ViewController.swift */; };
 		AEF768681CDD0A3E00EF7936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF768671CDD0A3E00EF7936 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE0FAC531CDD199F0004BAB0 /* CommandRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandRunner.swift; sourceTree = "<group>"; };
 		AEF768601CDD0A3E00EF7936 /* SSH Plopper UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSH Plopper UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF768631CDD0A3E00EF7936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF768651CDD0A3E00EF7936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				AEF768691CDD0A3E00EF7936 /* Main.storyboard */,
 				AEF7686C1CDD0A3E00EF7936 /* Info.plist */,
 				AEF768721CDD0A5E00EF7936 /* Advertiser.swift */,
+				AE0FAC531CDD199F0004BAB0 /* CommandRunner.swift */,
 			);
 			path = "SSH Plopper UI";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				AEF768661CDD0A3E00EF7936 /* ViewController.swift in Sources */,
 				AEF768641CDD0A3E00EF7936 /* AppDelegate.swift in Sources */,
 				AEF768731CDD0A5E00EF7936 /* Advertiser.swift in Sources */,
+				AE0FAC541CDD199F0004BAB0 /* CommandRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +283,7 @@
 				AEF768711CDD0A3E00EF7936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,9 @@ class Advertiser: NSObject, MCNearbyServiceAdvertiserDelegate, MCSessionDelegate
     let session : MCSession
 
     override init() {
-        localPeerId = MCPeerID(displayName: "balboa")
+        let hostName = NSHost.currentHost().localizedName
+        localPeerId = MCPeerID(displayName: hostName!)
+        print("Hostname is :" + hostName!)
         let serviceType = "ssh-key-service"
         advertiser = MCNearbyServiceAdvertiser(peer: localPeerId, discoveryInfo: nil, serviceType: serviceType)
         session = MCSession(peer: localPeerId, securityIdentity: nil, encryptionPreference: .Required)

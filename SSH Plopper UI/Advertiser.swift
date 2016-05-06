@@ -6,11 +6,12 @@ class Advertiser: NSObject, MCNearbyServiceAdvertiserDelegate, MCSessionDelegate
     let advertiser: MCNearbyServiceAdvertiser
     let localPeerId : MCPeerID
     let session : MCSession
-
+    
     override init() {
+      
         let hostName = NSHost.currentHost().localizedName
         localPeerId = MCPeerID(displayName: hostName!)
-        print("Hostname is :" + hostName!)
+        print("Hostname is " + hostName!)
         let serviceType = "ssh-key-service"
         advertiser = MCNearbyServiceAdvertiser(peer: localPeerId, discoveryInfo: nil, serviceType: serviceType)
         session = MCSession(peer: localPeerId, securityIdentity: nil, encryptionPreference: .Required)
@@ -21,7 +22,7 @@ class Advertiser: NSObject, MCNearbyServiceAdvertiserDelegate, MCSessionDelegate
         advertiser.delegate = self
         advertiser.startAdvertisingPeer()
         session.delegate = self;
-
+        
         print("Started to listen")
     }
 
@@ -38,6 +39,7 @@ class Advertiser: NSObject, MCNearbyServiceAdvertiserDelegate, MCSessionDelegate
     
     func session(session: MCSession, didReceiveData data: NSData, fromPeer peerID: MCPeerID) {
         print("Received data :" + data.description)
+        
         let sshHelper = SSHHelper()
         sshHelper.addKey(data)
     }
@@ -57,10 +59,46 @@ class Advertiser: NSObject, MCNearbyServiceAdvertiserDelegate, MCSessionDelegate
     
     func session(session: MCSession, peer peerID: MCPeerID, didChangeState state: MCSessionState) {
         print("change state" + peerID.displayName, state.rawValue)
+        if (state == MCSessionState.Connected) {
+            let randomNum = String(arc4random_uniform(1000000))
+            dispatch_async(dispatch_get_main_queue()) {
+                print("in dispatch async")
+                let dataNum = randomNum.dataUsingEncoding(NSUTF8StringEncoding)
+                
+                self.showNotification(randomNum)
+                print("peer id is" + peerID.displayName)
+                do {
+                    try  session.sendData(dataNum!, toPeers: [peerID], withMode: .Reliable)
+                } catch let error {
+                    print ("Failed to send random code to client", error)
+                }
+                self.dialogOKCancel("Ok?", text: randomNum)
+            }
+        }
     }
     
     func session(session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, atURL localURL: NSURL, withError error: NSError?) {
         print("did finish receiving resource " + resourceName)
     }
     
+    func dialogOKCancel(question: String, text: String) -> Bool {
+        let myPopup: NSAlert = NSAlert()
+        myPopup.messageText = text
+        myPopup.informativeText = ""
+        myPopup.alertStyle = NSAlertStyle.WarningAlertStyle
+//        myPopup.addButtonWithTitle("OK")
+        let res = myPopup.runModal()
+        if res == NSAlertFirstButtonReturn {
+            return true
+        }
+        return false
+    }
+    
+    func showNotification(text: String) -> Void {
+        let notification = NSUserNotification()
+        notification.title = "New SSH Plopper Connection"
+        notification.informativeText = "Do you trust the number " + text
+        notification.soundName = NSUserNotificationDefaultSoundName
+        NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
+    }
 }

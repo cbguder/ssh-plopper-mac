@@ -1,5 +1,6 @@
 import Cocoa
 
+
 class ViewController: NSViewController {
 
     let advertiser: Advertiser

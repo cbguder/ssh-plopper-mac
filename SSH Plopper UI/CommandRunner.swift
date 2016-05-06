@@ -13,6 +13,4 @@ class SSHHelper {
         task.waitUntilExit()
         return Int(task.terminationStatus)
     }
-    
-    
 }

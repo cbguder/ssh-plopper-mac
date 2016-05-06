@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEF768641CDD0A3E00EF7936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF768631CDD0A3E00EF7936 /* AppDelegate.swift */; };
+		AEF768661CDD0A3E00EF7936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF768651CDD0A3E00EF7936 /* ViewController.swift */; };
+		AEF768681CDD0A3E00EF7936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF768671CDD0A3E00EF7936 /* Assets.xcassets */; };
+		AEF7686B1CDD0A3E00EF7936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF768691CDD0A3E00EF7936 /* Main.storyboard */; };
+		AEF768731CDD0A5E00EF7936 /* Advertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF768721CDD0A5E00EF7936 /* Advertiser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AEF768601CDD0A3E00EF7936 /* SSH Plopper UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSH Plopper UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF768631CDD0A3E00EF7936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEF768651CDD0A3E00EF7936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEF768671CDD0A3E00EF7936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEF7686A1CDD0A3E00EF7936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEF7686C1CDD0A3E00EF7936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEF768721CDD0A5E00EF7936 /* Advertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertiser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEF7685D1CDD0A3E00EF7936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEF768571CDD0A3E00EF7936 = {
+			isa = PBXGroup;
+			children = (
+				AEF768621CDD0A3E00EF7936 /* SSH Plopper UI */,
+				AEF768611CDD0A3E00EF7936 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEF768611CDD0A3E00EF7936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEF768601CDD0A3E00EF7936 /* SSH Plopper UI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEF768621CDD0A3E00EF7936 /* SSH Plopper UI */ = {
+			isa = PBXGroup;
+			children = (
+				AEF768631CDD0A3E00EF7936 /* AppDelegate.swift */,
+				AEF768651CDD0A3E00EF7936 /* ViewController.swift */,
+				AEF768671CDD0A3E00EF7936 /* Assets.xcassets */,
+				AEF768691CDD0A3E00EF7936 /* Main.storyboard */,
+				AEF7686C1CDD0A3E00EF7936 /* Info.plist */,
+				AEF768721CDD0A5E00EF7936 /* Advertiser.swift */,
+			);
+			path = "SSH Plopper UI";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEF7685F1CDD0A3E00EF7936 /* SSH Plopper UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEF7686F1CDD0A3E00EF7936 /* Build configuration list for PBXNativeTarget "SSH Plopper UI" */;
+			buildPhases = (
+				AEF7685C1CDD0A3E00EF7936 /* Sources */,
+				AEF7685D1CDD0A3E00EF7936 /* Frameworks */,
+				AEF7685E1CDD0A3E00EF7936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SSH Plopper UI";
+			productName = "SSH Plopper UI";
+			productReference = AEF768601CDD0A3E00EF7936 /* SSH Plopper UI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEF768581CDD0A3E00EF7936 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Pivotal;
+				TargetAttributes = {
+					AEF7685F1CDD0A3E00EF7936 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AEF7685B1CDD0A3E00EF7936 /* Build configuration list for PBXProject "SSH Plopper UI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEF768571CDD0A3E00EF7936;
+			productRefGroup = AEF768611CDD0A3E00EF7936 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEF7685F1CDD0A3E00EF7936 /* SSH Plopper UI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEF7685E1CDD0A3E00EF7936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF768681CDD0A3E00EF7936 /* Assets.xcassets in Resources */,
+				AEF7686B1CDD0A3E00EF7936 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEF7685C1CDD0A3E00EF7936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF768661CDD0A3E00EF7936 /* ViewController.swift in Sources */,
+				AEF768641CDD0A3E00EF7936 /* AppDelegate.swift in Sources */,
+				AEF768731CDD0A5E00EF7936 /* Advertiser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AEF768691CDD0A3E00EF7936 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEF7686A1CDD0A3E00EF7936 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEF7686D1CDD0A3E00EF7936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEF7686E1CDD0A3E00EF7936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AEF768701CDD0A3E00EF7936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SSH Plopper UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.pivotal.SSH-Plopper-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AEF768711CDD0A3E00EF7936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SSH Plopper UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.pivotal.SSH-Plopper-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEF7685B1CDD0A3E00EF7936 /* Build configuration list for PBXProject "SSH Plopper UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF7686D1CDD0A3E00EF7936 /* Debug */,
+				AEF7686E1CDD0A3E00EF7936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEF7686F1CDD0A3E00EF7936 /* Build configuration list for PBXNativeTarget "SSH Plopper UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF768701CDD0A3E00EF7936 /* Debug */,
+				AEF768711CDD0A3E00EF7936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEF768581CDD0A3E00EF7936 /* Project object */;
+}
